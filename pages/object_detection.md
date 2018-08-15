@@ -58,7 +58,7 @@ pip3 install tensorflow_gpu-1.9.0-cp35-cp35m-linux_x86_64.whl —user
 **請先按[caffe2官方文件](https://caffe2.ai/docs/getting-started.html?platform=ubuntu&configuration=compile)安裝**
 
 ```bash
-# 需更新eigen版本: 需自行下載eigen3套件(https://download.csdn.net/download/luojie140/10385556)
+# 需更新eigen版本: 需下載[eigen3套件](../assets/eigen3.zip)(ref: https://download.csdn.net/download/luojie140/10385556)
 unzip eigen3.zip
 
 # 如果已存在eigen3套件，則移除
