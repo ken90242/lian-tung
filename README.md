@@ -29,7 +29,8 @@
 ## 項目進展
 ### **一、行人偵測** (見[流程文件](pages/main_procedure.md))
 <img src="assets/object_detection.gif" alt="行人偵測示意圖"/>
-* 開源項目(detectron)：(https://github.com/facebookresearch/Detectron)
+
+* **開源項目(detectron)**：(https://github.com/facebookresearch/Detectron)
 
 > 若安裝caffe2(detectron使用環境)有困難，可改用tensorflow版本(效果略差)：(https://github.com/matterport/Mask_RCNN)
 
@@ -122,7 +123,7 @@ ln -s [coco格式的標記檔位置] $DETECTRON/detectron/datasets/data/coco/ann
 <img src="assets/face_detection.gif" alt="人臉識別示意圖"/>
 目前僅找到可用的開源項目，未進行實驗及任何優化，也未建立人臉資料庫  
 
-* 開源項目(tiny-face)：https://github.com/cydonia999/Tiny_Faces_in_Tensorflow
+* **開源項目(tiny-face)**：https://github.com/cydonia999/Tiny_Faces_in_Tensorflow
 
 * **論文及相關閱讀**  
 [1] Tiny Faces, 2016: (https://arxiv.org/abs/1612.04402)
