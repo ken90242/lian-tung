@@ -1,8 +1,8 @@
 # 行人偵測與識別
 ## 里程碑
-[2017/12 - 2018/02] HOG - 范京(正職)
-[2018/02 - 2018/07] 維護交接 - 黃朝雅(正職)
-[2018/07 - 2018/08] Mask RCNN - 韓宏光(實習)、洪慕竹(實習)、黃傳恩(實習)
+* [2017/12 - 2018/02] HOG - 范京(正職)
+* [2018/02 - 2018/07] 維護交接 - 黃朝雅(正職)
+* [2018/07 - 2018/08] Mask RCNN - 韓宏光(實習)、洪慕竹(實習)、黃傳恩(實習)
 
 ## 項目前情提要與說明
 此項目主要目標為透過解析營業廳監視視頻串流，統計並分析人流量
@@ -34,6 +34,7 @@
 ### **行人偵測** (詳細見流程文件)
 <img src="https://media.giphy.com/media/l41lI4bYmcsPJX9Go/giphy.gif" alt="行人偵測示意圖" width="200px"/>
 開源項目(detectron)：(https://github.com/facebookresearch/Detectron)
+
 > 若安裝caffe2(detectron使用環境)有困難，可改用tensorflow版本(效果略差)：(https://github.com/matterport/Mask_RCNN)
 
 * **論文及相關閱讀**
