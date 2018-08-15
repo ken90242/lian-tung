@@ -55,11 +55,10 @@
 > 
 > Reference:  
 > [1] Coco-style數據集創建: (https://patrickwasp.com/create-your-own-coco-style-dataset/)  
-> [2] 修改Detectron配置文件: (https://zhuanlan.zhihu.com/p/34036460)
-
-<img src="assets/tag_image_website.png" height="450px"/>
-
-> 此為網站示意圖
+> [2] 修改Detectron配置文件: (https://zhuanlan.zhihu.com/p/34036460)  
+> 
+> 下圖為網站示意圖  
+> <img src="assets/tag_image_website.png" height="450px"/>
 
 1. 標記數據，並轉為coco格式(參考https://github.com/waspinator/js-segment-annotator)
 ```bash
