@@ -7,7 +7,7 @@
 > Input: rtsp位址  
 > Output: 圖像(001.png, 002.png, ...)
 
-**串流位址：(點此查閱表格 / 或聯繫@朝雅)**
+**串流位址：(點此查閱[表格](../assets/rtsp_address.xlsx)(ChinaUnicom-wai的wifi密碼) / 或聯繫@朝雅)**
 
 ```bash
 # [Example]
