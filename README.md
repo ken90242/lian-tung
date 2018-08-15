@@ -31,7 +31,7 @@
 <img src="assets/procedure_3.png" height="200px"//>
 
 ## 項目進展
-### **行人偵測** (詳細見[流程文件](pages/main_procedure.md))
+### **行人偵測** (見[流程文件](pages/main_procedure.md))
 <img src="https://media.giphy.com/media/l41lI4bYmcsPJX9Go/giphy.gif" alt="行人偵測示意圖" width="200px"/>
 開源項目(detectron)：(https://github.com/facebookresearch/Detectron)
 
