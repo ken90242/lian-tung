@@ -1,9 +1,9 @@
-# 計算機環境
+# 一、計算機環境
 [OS]: Ubuntu 16.04.5 LTS  
 [Python]: 2.7.15  
 [GPU]: GeForce GTX 1080Ti(11GB)兩顆
 
-# 安裝所需套件
+# 二、安裝所需套件
 > Reference：(https://medium.com/@xinh3ng/install-cuda-9-1-and-cudnn-7-for-tensorflow-1-5-0-cda36239bc68)
 
 ## 1. 安裝CUDA, CUDNN..等GPU運算套件
@@ -94,7 +94,7 @@ cd $DETECTRON
 python setup.py develop --user
 ```
 
-# 修改detectron源代碼
+# 三、修改detectron源代碼
 ## 1. detectron/detectron/utils/vis.py
 
 ```diff

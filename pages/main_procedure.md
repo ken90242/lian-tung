@@ -1,8 +1,8 @@
-# 計算機環境
+# 一、計算機環境
 [OS]: Ubuntu 16.04.5 LTS  
 [Python]: 3.5.2 / 2.7.15
 
-# 流程
+# 二、流程說明
 ## 1. 擷取視頻串流成圖像
 > Input: rtsp位址  
 > Output: 圖像(001.png, 002.png, ...)
@@ -63,7 +63,7 @@ with open('_stats.pkl', 'rb') as f:
 
 ```
 
-# 其他
+# 三、其他
 ## 將視頻轉為圖像
 ```python
 import cv2
