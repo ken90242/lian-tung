@@ -10,10 +10,10 @@
 **串流位址：(點此查閱表格 / 或聯繫@朝雅)**
 
 ```bash
-avconv -rtsp_transport tcp -i [rtsp地址] -r [每秒幾禎] -f image2 %04d.png
 # [Example]
 # (直接在當前目錄下生成圖像)
 # avconv -rtsp_transport tcp -i rtsp://admin:unicom0593@175.42.64.76:554/Streaming/Channels/301 -r 30 -f image2 %04d.png
+avconv -rtsp_transport tcp -i [rtsp地址] -r [每秒幾禎] -f image2 %04d.png
 ```
 
 ## 2.行人偵測模型，偵測人數
@@ -23,15 +23,7 @@ avconv -rtsp_transport tcp -i [rtsp地址] -r [每秒幾禎] -f image2 %04d.png
 
 ```python
 # (先進入detectron目錄)
-python2 tools/infer_simple.py \
---cfg [設定檔位置] \
---output-dir [輸出目錄] \
---image-ext [圖像來源格式] \
---output-ext [圖像輸出格式] \
---wts [模型權重檔] \
-[圖像來源目錄]
-
-# [Example] (須先進入detectron目錄)
+# [Example]
 # python2 tools/infer_simple.py \
 # --cfg configs/12_2017_baselines/e2e_mask_rcnn_R-101-FPN_2x.yaml \
 # --output-dir /tmp/detectron-visualizations \
@@ -39,6 +31,13 @@ python2 tools/infer_simple.py \
 # --output-ext png \
 # --wts https://s3-us-west-2.amazonaws.com/detectron/35861858/12_2017_baselines/e2e_mask_rcnn_R-101-FPN_2x.yaml.02_32_51.#SgT4y1cO/output/train/coco_2014_train:coco_2014_valminusminival/generalized_rcnn/model_final.pkl \
 # ../template/
+python2 tools/infer_simple.py \
+--cfg [設定檔位置] \
+--output-dir [輸出目錄] \
+--image-ext [圖像來源格式] \
+--output-ext [圖像輸出格式] \
+--wts [模型權重檔] \
+[圖像來源目錄]
 ```
 
 ## 3.平滑化數據
@@ -137,9 +136,9 @@ git clone https://github.com/revmischa/rtsp-server.git
 cd rtsp-server
 sudo ./rtsp-server.pl
 cd
-ffmpeg -re -i [視頻位置] -f rtsp -muxdelay 0.1 -strict -2 [服務器地址及端口]
-
 # [Example]
 # ffmpeg -re -i ./test_live_stream.mp4 -f rtsp -muxdelay 0.1 -strict -2 rtsp://112.112.112.112:5545/abc
+ffmpeg -re -i [視頻位置] -f rtsp -muxdelay 0.1 -strict -2 [服務器地址及端口]
+
 # 觀看串流直接在網址列輸入rtsp://112.112.112.112/abc(須先安裝VLC播放套件)
 ```
