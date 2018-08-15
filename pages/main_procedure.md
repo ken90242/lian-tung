@@ -17,7 +17,7 @@ avconv -rtsp_transport tcp -i [rtsp地址] -r [每秒幾禎] -f image2 %04d.png
 ```
 
 ## 2.行人偵測模型，偵測人數
-* **務必先完成detectron環境安裝及相關源代碼改動**
+* **務必先完成detectron環境安裝及相關源代碼改動**(見[detectron安裝文件](object_detection.md))
 > Input: (圖像 or 放置圖像的目錄) + 模型權重檔 + 設定檔
 > Output: 標記圖像(於輸出目錄下) + pickle檔案(紀錄人數信息)
 
