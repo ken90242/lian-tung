@@ -54,11 +54,11 @@
 > 1. 大量數據需人工標記
 > 2. 需要GPU資源支持
 > 計畫以聯通服務器，架起標註訓練圖像的網站，供多人協力完成
-> -
+> =
 > Reference:
 > [1] Coco-style數據集創建: (https://patrickwasp.com/create-your-own-coco-style-dataset/)
 > [2] 修改Detectron配置文件: (https://zhuanlan.zhihu.com/p/34036460)
-> -
+> =
 
 
 [1. 標記數據，並轉為coco格式]
@@ -119,8 +119,7 @@ ln -s [coco格式的標記檔位置] $DETECTRON/detectron/datasets/data/coco/ann
 +    _ANN_FN:
 +        _DATA_DIR + '/coco/annotations/coco.json'
 + },
-
-
+```
 ---
 
 2. **人臉識別**
