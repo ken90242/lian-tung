@@ -125,7 +125,7 @@ ln -s [coco格式的標記檔位置] $DETECTRON/detectron/datasets/data/coco/ann
 ---
 
 ### **人臉識別**
-<img src="assets/face_detection.gif" alt="人臉識別示意圖" width="200px"/>
+<img src="assets/face_detection.gif" alt="人臉識別示意圖"/>
 目前僅找到可用的開源項目，未進行實驗及任何優化
 開源項目(tiny-face)：https://github.com/cydonia999/Tiny_Faces_in_Tensorflow
 
