@@ -95,26 +95,26 @@ ln -s [coco格式的標記檔位置] $DETECTRON/detectron/datasets/data/coco/ann
 > 這邊要注意NUM_GPUS要改為實際擁有的GPU數量
 
 ```diff
-@@ 6,7
+@@ 6,7 @@
 - NUM_GPUS: 8
 + NUM_GPUS: 2
 
-@@ 11, 11
+@@ 11, 11 @@
 - BASE_LR: 0.005
 + BASE_LR: 0.02
 
-@@ 33, 34
+@@ 33, 34 @@
 - WEIGHTS: https://s3-us-west-2.amazonaws.com/detectron/ImageNetPretrained/MSRA/R-101.pkl
 + WEIGHTS: https://s3-us-west-2.amazonaws.com/detectron/35861858/12_2017_baselines/e2e_mask_rcnn_R-101-FPN_2x.yaml.02_32_51.SgT4y1cO/output/train/coco_2014_train:coco_2014_valminusminival/generalized_rcnn/model_final.pkl
 - DATASETS: ('coco_2014_train', 'coco_2014_valminusminival')
 + DATASETS: ('coco_2014_train', 'self_train')
 
-@@ 39, 38
+@@ 39, 38 @@
 + IMS_PER_BATCH: 1
 ```
 [4. 修改detectron訓練數據文件 - detectron/detectron/datasets/dataset_catalog.py]
 ```diff
-@@ 40, 0
+@@ 40, 0 @@
 + 'self_train': {
 + 	  _IM_DIR:
 +        _DATA_DIR + '/coco/images',
