@@ -28,8 +28,8 @@
 
 ## 項目進展
 ### **一、行人偵測** (見[流程文件](pages/main_procedure.md))
-<img src="assets/object_detection.gif" alt="行人偵測示意圖"/>
-<img src="https://pan.baidu.com/s/1cnY6OK2jHVrWSPjBW7fcOA" alt="行人偵測示意圖"/>
+<img src="assets/object_detection.gif" alt="行人偵測示意圖a"/>
+<img src="https://pan.baidu.com/s/1cnY6OK2jHVrWSPjBW7fcOA" alt="行人偵測示意圖b"/>
 
 * **開源項目(detectron)**：(https://github.com/facebookresearch/Detectron)
 
