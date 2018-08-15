@@ -56,7 +56,7 @@ def moving_average(a, n=3):
     ret[n:] = ret[n:] - ret[:-n]
     return ret[n - 1:] / n
 
-with open('8_stats.pkl', 'rb') as f:
+with open('_stats.pkl', 'rb') as f:
     person_stat = pkl.load(f)
     res = moving_average(person_stat, n=10) # 每10個frame
     plt.plot(res)

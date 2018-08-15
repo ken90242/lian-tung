@@ -63,8 +63,8 @@ unzip eigen3.zip
 
 # 如果已存在eigen3套件，則移除
 sudo rm -rf /usr/include/eigen3/
-sudo mv [新eigen3目錄位置] /usr/include/
 # [Example] sudo mv ./eigen3 /usr/include/
+sudo mv [新eigen3目錄位置] /usr/include/
 
 # 補安裝future套件
 pip install future
@@ -87,7 +87,8 @@ make install
 
 ## 5. 安裝DETECTRON套件
 ```bash
-DETECTRON=/home/r06725053/detectron
+# [Example] DETECTRON=/home/r06725053/detectron
+DETECTRON=[detectron套件位置]
 git clone https://github.com/facebookresearch/detectron $DETECTRON
 cd $DETECTRON
 python setup.py develop --user
