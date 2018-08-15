@@ -31,7 +31,7 @@
 <img src="assets/procedure_3.png"/>
 
 ## 項目進展
-1. **行人偵測** (詳細見流程文件)
+### **行人偵測** (詳細見流程文件)
 <img src="https://media.giphy.com/media/l41lI4bYmcsPJX9Go/giphy.gif" alt="行人偵測示意圖" width="200px"/>
 開源項目(detectron)：(https://github.com/facebookresearch/Detectron)
 > 若安裝caffe2(detectron使用環境)有困難，可改用tensorflow版本(效果略差)：(https://github.com/matterport/Mask_RCNN)
@@ -61,7 +61,7 @@
 > =
 
 
-[1. 標記數據，並轉為coco格式]
+1. 標記數據，並轉為coco格式
 ```bash
 git clone https://github.com/ken90242/js-segment-annotator.git
 
@@ -75,7 +75,7 @@ cd js-segment-annotator/python
 # 輸出coco格式的json檔：位置為js-segment-annotator/data/coco.json
 python generate_coco_json.py
 ```
-[2. 將標記數據及圖像移至detectron套件要求位置(見[detectron/detectron/datasets/data/README.md](https://github.com/facebookresearch/Detectron/blob/master/detectron/datasets/data/README.md))]
+2. 將標記數據及圖像移至detectron套件要求位置(見[detectron/detectron/datasets/data/README.md](https://github.com/facebookresearch/Detectron/blob/master/detectron/datasets/data/README.md))
 ```bash
 # [Example] DETECTRON=/home/r06725053/detectron
 DETECTRON=[detectron位置]
@@ -89,7 +89,7 @@ ln -s [原始圖像位置] $DETECTRON/detectron/datasets/data/coco/
 ln -s [coco格式的標記檔位置] $DETECTRON/detectron/datasets/data/coco/annotations
 ```
 
-[3. 修改detectron配置文件 - detectron/configs/12_2017_baselines/e2e_mask_rcnn_R-101-FPN_2x.yaml]
+3. 修改detectron配置文件 - detectron/configs/12_2017_baselines/e2e_mask_rcnn_R-101-FPN_2x.yaml
 > 這邊要注意NUM_GPUS要改為實際擁有的GPU數量
 
 ```diff
@@ -122,12 +122,13 @@ ln -s [coco格式的標記檔位置] $DETECTRON/detectron/datasets/data/coco/ann
 ```
 ---
 
-2. **人臉識別**
+### **人臉識別**
 <img src="https://media.giphy.com/media/l41lI4bYmcsPJX9Go/giphy.gif" alt="人臉識別示意圖" width="200px"/>
 目前僅找到可用的開源項目，未進行實驗及任何優化
 開源項目(tiny-face)：https://github.com/cydonia999/Tiny_Faces_in_Tensorflow
 
 **論文閱讀**
+
 [1] Tiny Faces, 2016: (https://arxiv.org/abs/1612.04402)
 
 ---
