@@ -1,7 +1,7 @@
 # 計算機環境
-[OS]: Ubuntu 16.04.5 LTS
-[Python]: 2.7.15
-[GPU]: GeForce GTX 1080Ti(11GB) * 2
+[OS]: Ubuntu 16.04.5 LTS  
+[Python]: 2.7.15  
+[GPU]: GeForce GTX 1080Ti(11GB)兩顆
 
 # 安裝所需套件
 > Reference：(https://medium.com/@xinh3ng/install-cuda-9-1-and-cudnn-7-for-tensorflow-1-5-0-cda36239bc68)

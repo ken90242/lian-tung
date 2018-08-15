@@ -1,6 +1,5 @@
 # 計算機環境
-[OS]: Ubuntu 16.04.5 LTS
-
+[OS]: Ubuntu 16.04.5 LTS  
 [Python]: 3.5.2 / 2.7.15
 
 # 流程
