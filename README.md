@@ -32,7 +32,7 @@
 
 > 若安裝caffe2(detectron使用環境)有困難，可改用tensorflow版本(效果略差)：(https://github.com/matterport/Mask_RCNN)
 
-* **論文及相關閱讀**
+* **論文及相關閱讀**  
 [1] RCNN, 2013: (https://arxiv.org/abs/1311.2524)  
 [2] Spatial Pyramid, 2014: (https://arxiv.org/abs/1406.4729)  
 [3] Fast RCNN, 2015: (https://arxiv.org/abs/1504.08083)  
