@@ -52,10 +52,8 @@
 > 計畫以聯通服務器，架起標註訓練圖像的網站，供多人協力完成
 > 
 > Reference:
-> [1] Coco-style數據集創建: (https://patrickwasp.com/create-your-own-coco-style-dataset/)
-> 
+> [1] Coco-style數據集創建: (https://patrickwasp.com/create-your-own-coco-style-dataset/)  
 > [2] 修改Detectron配置文件: (https://zhuanlan.zhihu.com/p/34036460)
-> 
 
 
 1. 標記數據，並轉為coco格式(參考https://github.com/waspinator/js-segment-annotator)
