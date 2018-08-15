@@ -13,7 +13,7 @@
 
 經大量搜尋及嘗試後，確定Facebook團隊開發的detectron開源項目效果為最好的(以caffe2為基底的技術框架，配合Mask RCNN的算法)
 
-直接採用該團隊使用GPU資源訓練好的模型及源代碼，後續進行項目適用化。
+因此直接採用該團隊使用GPU資源訓練好的模型及源代碼，後續進行項目適用化。
 
 ## 項目目前遭遇困難及通融辦法
 * 聯通服務器系統版本落後，不支援GPU資源(我們使用學校GPU服務器自行開發)
@@ -31,7 +31,7 @@
 <img src="assets/procedure_3.png" height="200px"//>
 
 ## 項目進展
-### **行人偵測** (詳細見流程文件)
+### **行人偵測** (詳細見[流程文件](pages/main_procedure.md))
 <img src="https://media.giphy.com/media/l41lI4bYmcsPJX9Go/giphy.gif" alt="行人偵測示意圖" width="200px"/>
 開源項目(detectron)：(https://github.com/facebookresearch/Detectron)
 
