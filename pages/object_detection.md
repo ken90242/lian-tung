@@ -6,14 +6,14 @@
 # 二、安裝所需套件
 > Reference：(https://medium.com/@xinh3ng/install-cuda-9-1-and-cudnn-7-for-tensorflow-1-5-0-cda36239bc68) 
 
-* 下載套件(百度網盤地址)
-> tensorflow_gpu_1.5.0-cp27.whl: https://pan.baidu.com/s/1uVSpxtKGSH9QHQo11PWlIg
-> nccl-cuda9.0.deb: https://pan.baidu.com/s/1pT30ppQN7ByuWv_iamemzw
-> libcudnn7.deb: https://pan.baidu.com/s/1DBswFyWRTfdy5CZixuC2hw
-> libcudnn7-dev.deb: https://pan.baidu.com/s/1hick70me6ZngyiuLbeKmsw
-> libcudnn7-doc.deb: https://pan.baidu.com/s/1AixJucHHqloGWfxaVVgtNg
-> cuda-repo-9-0.deb: https://pan.baidu.com/s/12aPiHUfj_K6xJbIXkx9PCA
-> eigen3.zip: https://pan.baidu.com/s/1HSFXgJFaj4wCby8oong8yw
+* 下載套件(百度網盤地址)  
+> tensorflow_gpu_1.5.0-cp27.whl: https://pan.baidu.com/s/1uVSpxtKGSH9QHQo11PWlIg  
+> nccl-cuda9.0.deb: https://pan.baidu.com/s/1pT30ppQN7ByuWv_iamemzw  
+> libcudnn7.deb: https://pan.baidu.com/s/1DBswFyWRTfdy5CZixuC2hw  
+> libcudnn7-dev.deb: https://pan.baidu.com/s/1hick70me6ZngyiuLbeKmsw  
+> libcudnn7-doc.deb: https://pan.baidu.com/s/1AixJucHHqloGWfxaVVgtNg  
+> cuda-repo-9-0.deb: https://pan.baidu.com/s/12aPiHUfj_K6xJbIXkx9PCA  
+> eigen3.zip: https://pan.baidu.com/s/1HSFXgJFaj4wCby8oong8yw  
 
 ## 1. 安裝CUDA, CUDNN..等GPU運算套件
 ```bash
