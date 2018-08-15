@@ -26,7 +26,7 @@
 <img src="assets/procedure_3.png" height="200px"//>
 
 ## 項目進展
-### **行人偵測** (見[流程文件](pages/main_procedure.md))
+### **一、行人偵測** (見[流程文件](pages/main_procedure.md))
 <img src="https://media.giphy.com/media/l41lI4bYmcsPJX9Go/giphy.gif" alt="行人偵測示意圖" width="200px"/>
 開源項目(detectron)：(https://github.com/facebookresearch/Detectron)
 
@@ -43,7 +43,7 @@
 [8] Feature Pyramid, 2016: (https://arxiv.org/abs/1612.03144)  
 [9] [Understanding Feature Pyramid Networks for object detection (FPN)](https://medium.com/@jonathan_hui/understanding-feature-pyramid-networks-for-object-detection-fpn-45b227b9106c)
 
-* 模型再訓練(適應營業廳場景)
+* **模型再訓練(適應營業廳場景)**
 > 由于Facebook預先訓練好的模型對於人口密集的圖像仍不夠完善
 > 我們計畫之後透過標記好的營業廳圖像來支持模型再訓練
 > 模型再訓練主要的困難點如下：
@@ -51,7 +51,7 @@
 > 2. 需要GPU資源支持
 > 計畫以聯通服務器，架起標註訓練圖像的網站，供多人協力完成
 > 
-> Reference:
+> Reference:  
 > [1] Coco-style數據集創建: (https://patrickwasp.com/create-your-own-coco-style-dataset/)  
 > [2] 修改Detectron配置文件: (https://zhuanlan.zhihu.com/p/34036460)
 
@@ -117,9 +117,9 @@ ln -s [coco格式的標記檔位置] $DETECTRON/detectron/datasets/data/coco/ann
 ```
 ---
 
-### **人臉識別**
+### 二、人臉識別
 <img src="assets/face_detection.gif" alt="人臉識別示意圖"/>
-目前僅找到可用的開源項目，未進行實驗及任何優化
+目前僅找到可用的開源項目，未進行實驗及任何優化，也未建立人臉資料庫
 開源項目(tiny-face)：https://github.com/cydonia999/Tiny_Faces_in_Tensorflow
 
 **論文閱讀**
@@ -128,5 +128,5 @@ ln -s [coco格式的標記檔位置] $DETECTRON/detectron/datasets/data/coco/ann
 
 ---
 
-3. 行人再偵測(person re-identification)
+### 三、行人再偵測(person re-identification)
 分析多個圖像(監視視頻)，辨識同一個行人的特徵。目前無任何進展。
