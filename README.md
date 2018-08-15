@@ -24,7 +24,7 @@
 
 此項目大致流程如下：(點此閱讀詳細流程文件)
 1. 自網上擷取視頻串流，並將視頻分割成圖像
-<img src="assets/procedure_1.png"/ height="400px">
+<img src="assets/procedure_1.png"/ height="200px">
 2. 使用**行人偵測**模型(detectron)偵測圖像中的人數，(未來配合**人臉識別**與**行人再識別**，精確計算行人數量)
 <img src="assets/procedure_2.png"/>
 3. 平滑化數據(因模型存在失誤率)
