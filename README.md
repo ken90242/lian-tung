@@ -33,14 +33,14 @@
 > 若安裝caffe2(detectron使用環境)有困難，可改用tensorflow版本(效果略差)：(https://github.com/matterport/Mask_RCNN)
 
 * **論文及相關閱讀**
-[1] RCNN, 2013: (https://arxiv.org/abs/1311.2524)
-[2] Spatial Pyramid, 2014: (https://arxiv.org/abs/1406.4729)
-[3] Fast RCNN, 2015: (https://arxiv.org/abs/1504.08083)
-[4] Faster RCNN, 2015: (https://arxiv.org/abs/1406.4729)
-[5] YOLO, 2015: (https://arxiv.org/abs/1506.02640)
-[6] Mask RCNN, 2017: (https://arxiv.org/abs/1703.06870)
-[7] [Instance Segmentation with Mask R-CNN and TensorFlow](https://engineering.matterport.com/splash-of-color-instance-segmentation-with-mask-r-cnn-and-tensorflow-7c761e238b46)
-[8] Feature Pyramid, 2016: (https://arxiv.org/abs/1612.03144)
+[1] RCNN, 2013: (https://arxiv.org/abs/1311.2524)  
+[2] Spatial Pyramid, 2014: (https://arxiv.org/abs/1406.4729)  
+[3] Fast RCNN, 2015: (https://arxiv.org/abs/1504.08083)  
+[4] Faster RCNN, 2015: (https://arxiv.org/abs/1406.4729)  
+[5] YOLO, 2015: (https://arxiv.org/abs/1506.02640)  
+[6] Mask RCNN, 2017: (https://arxiv.org/abs/1703.06870)  
+[7] [Instance Segmentation with Mask R-CNN and TensorFlow](https://engineering.matterport.com/splash-of-color-instance-segmentation-with-mask-r-cnn-and-tensorflow-7c761e238b46)  
+[8] Feature Pyramid, 2016: (https://arxiv.org/abs/1612.03144)  
 [9] [Understanding Feature Pyramid Networks for object detection (FPN)](https://medium.com/@jonathan_hui/understanding-feature-pyramid-networks-for-object-detection-fpn-45b227b9106c)
 
 * 模型再訓練(適應營業廳場景)
