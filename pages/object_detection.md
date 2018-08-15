@@ -71,7 +71,9 @@ pip install future
 pip3 install future
 
 # 將caffe2位置export進PYTHONPATH變數
-export PYTHONPATH=$PYTHONPATH:/home/r06725053/pytorch/build
+# [Example]
+# export PYTHONPATH=$PYTHONPATH:/home/r06725053/pytorch/build
+export PYTHONPATH=$PYTHONPATH:[pytorch套件位置]
 
 # 如果沒有找到hypothesis套件
 pip install hypothesis
@@ -79,7 +81,9 @@ pip install hypothesis
 
 ## 4. 安裝COCO API套件
 ```bash
-COCOAPI=/home/r06725053/cocoapi
+# [Example]
+# export COCOAPI=/home/r06725053/cocoapi
+export COCOAPI=[cocoapi套件位置]
 git clone https://github.com/cocodataset/cocoapi.git $COCOAPI
 cd $COCOAPI/PythonAPI
 make install
@@ -87,7 +91,8 @@ make install
 
 ## 5. 安裝DETECTRON套件
 ```bash
-# [Example] DETECTRON=/home/r06725053/detectron
+# [Example]
+# DETECTRON=/home/r06725053/detectron
 DETECTRON=[detectron套件位置]
 git clone https://github.com/facebookresearch/detectron $DETECTRON
 cd $DETECTRON
