@@ -123,11 +123,10 @@ ln -s [coco格式的標記檔位置] $DETECTRON/detectron/datasets/data/coco/ann
 目前僅找到可用的開源項目，未進行實驗及任何優化，也未建立人臉資料庫  
 * 開源項目(tiny-face)：https://github.com/cydonia999/Tiny_Faces_in_Tensorflow
 
-**論文閱讀**
-
+* **論文及相關閱讀**  
 [1] Tiny Faces, 2016: (https://arxiv.org/abs/1612.04402)
 
 ---
 
 ### 三、行人再偵測(person re-identification)
-分析多個圖像(監視視頻)，辨識同一個行人的特徵。目前無任何進展。
+分析多個圖像(監視視頻)，辨識同一個行人的特徵。尚待研究。
