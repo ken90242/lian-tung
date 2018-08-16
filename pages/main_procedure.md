@@ -66,7 +66,7 @@ with open('_stats.pkl', 'rb') as f:
 # 三、其他
 ## 將視頻轉為圖像
 > [Exmaple] video2img.py  
-> 輸入本目錄下的video.mp4檔，輸出圖像位置為本地目錄  
+> 輸入**本目錄下的video.mp4檔**，輸出圖像位置為**本地目錄**  
 > `$ python video2img.py ./video.mp4 ./`  
 
 ```python
@@ -92,7 +92,7 @@ while success:
 
 ## 將圖像轉為視頻
 > [Exmaple] img2video.py  
-> 輸入本目錄下的所有的png檔，輸出視頻位置為本地目錄的video.mp4  
+> 輸入**本目錄**下的所有的**png檔**，輸出視頻位置為**本地目錄的video.mp4**  
 > `$ python img2video.py -i ./ -o video.mp4 -ext png`  
 
 ```python
