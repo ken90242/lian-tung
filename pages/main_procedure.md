@@ -65,10 +65,9 @@ with open('_stats.pkl', 'rb') as f:
 
 # 三、其他
 ## 將視頻轉為圖像
-> [Exmaple] video2img.py
-> 輸入本目錄下的video.mp4檔，輸出圖像位置為本地目錄
-
-`$ python video2img.py ./video.mp4 ./`
+> [Exmaple] video2img.py  
+> 輸入本目錄下的video.mp4檔，輸出圖像位置為本地目錄  
+> `$ python video2img.py ./video.mp4 ./`  
 
 ```python
 import cv2
