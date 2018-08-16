@@ -62,30 +62,30 @@
 
 1. 標記數據，並轉為coco格式(參考https://github.com/waspinator/js-segment-annotator)
 ```bash
-git clone https://github.com/ken90242/js-segment-annotator.git
+$ git clone https://github.com/ken90242/js-segment-annotator.git
 
 # 將所有待標註圖像移至js-segment-annotator/data/images/
 # 直接打開網頁即可開始標註(請參考網頁說明)
 # 標註完後點擊輸出即可獲得標註圖像(全黑的.png圖像檔案，名稱須為[編號].jpg)
 # 將所有輸出的.png圖像(上千至上萬張)傳至js-segment-annotator/data/annotations
 
-cd js-segment-annotator/python
+$ cd js-segment-annotator/python
 
 # 輸出coco格式的json檔：位置為js-segment-annotator/data/coco.json
-python generate_coco_json.py
+$ python generate_coco_json.py
 ```
 2. 將標記數據及圖像移至detectron套件要求位置(見[detectron/detectron/datasets/data/README.md](https://github.com/facebookresearch/Detectron/blob/master/detectron/datasets/data/README.md))
 ```bash
 # [Example] DETECTRON=/home/r06725053/detectron
-DETECTRON=[detectron位置]
+$ DETECTRON=[detectron位置]
 
-mkdir -p $DETECTRON/detectron/datasets/data/coco
+$ mkdir -p $DETECTRON/detectron/datasets/data/coco
 
 # [Example]
 # [原始圖像位置]: js-segment-annotator/data/images/
 # [coco格式的標記檔位置]: js-segment-annotator/data/coco.json
-ln -s [原始圖像位置] $DETECTRON/detectron/datasets/data/coco/
-ln -s [coco格式的標記檔位置] $DETECTRON/detectron/datasets/data/coco/annotations
+$ ln -s [原始圖像位置] $DETECTRON/detectron/datasets/data/coco/
+$ ln -s [coco格式的標記檔位置] $DETECTRON/detectron/datasets/data/coco/annotations
 ```
 
 3. 修改detectron配置文件 - detectron/configs/12_2017_baselines/e2e_mask_rcnn_R-101-FPN_2x.yaml

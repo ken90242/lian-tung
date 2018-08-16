@@ -13,7 +13,7 @@
 # [Example]
 # (直接在當前目錄下生成圖像)
 # avconv -rtsp_transport tcp -i rtsp://admin:unicom0593@175.42.64.76:554/Streaming/Channels/301 -r 30 -f image2 %04d.png
-avconv -rtsp_transport tcp -i [rtsp地址] -r [每秒幾禎] -f image2 %04d.png
+$ avconv -rtsp_transport tcp -i [rtsp地址] -r [每秒幾禎] -f image2 %04d.png
 ```
 
 ## 2. 行人偵測模型，偵測人數
@@ -132,13 +132,13 @@ print("The output video is {}".format(output))
 
 ## 廣播視頻(視頻 -> rtsp串流)
 ```bash
-git clone https://github.com/revmischa/rtsp-server.git
-cd rtsp-server
-sudo ./rtsp-server.pl
-cd
+$ git clone https://github.com/revmischa/rtsp-server.git
+$ cd rtsp-server
+$ sudo ./rtsp-server.pl
+$ cd
 # [Example]
 # ffmpeg -re -i ./test_live_stream.mp4 -f rtsp -muxdelay 0.1 -strict -2 rtsp://112.112.112.112:5545/abc
-ffmpeg -re -i [視頻位置] -f rtsp -muxdelay 0.1 -strict -2 [服務器地址及端口]
+$ ffmpeg -re -i [視頻位置] -f rtsp -muxdelay 0.1 -strict -2 [服務器地址及端口]
 
 # 觀看串流直接在網址列輸入rtsp://112.112.112.112/abc(須先安裝VLC播放套件)
 ```

@@ -18,45 +18,45 @@
 ## 1. 安裝CUDA, CUDNN..等GPU運算套件
 ```bash
 # 安裝cuda-toolkit
-sudo dpkg -i cuda-repo-ubuntu1604-9-0-local_9.0.176-1_amd64.deb
-sudo apt-key add /var/cuda-repo-9-0-local/7fa2af80.pub
-sudo apt-get update
-sudo apt-get install cuda-9-0
+$ sudo dpkg -i cuda-repo-ubuntu1604-9-0-local_9.0.176-1_amd64.deb
+$ sudo apt-key add /var/cuda-repo-9-0-local/7fa2af80.pub
+$ sudo apt-get update
+$ sudo apt-get install cuda-9-0
 
 # 設置路徑
-export PATH=/usr/local/cuda/bin:${PATH}
-export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=”/usr/local/cuda/extras/CUPTI/lib64":${LD_LIBRARY_PATH}
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:"/usr/lib/nvidia-375"
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:"/usr/lib/nvidia-396"
+$ export PATH=/usr/local/cuda/bin:${PATH}
+$ export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+$ export LD_LIBRARY_PATH=”/usr/local/cuda/extras/CUPTI/lib64":${LD_LIBRARY_PATH}
+$ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:"/usr/lib/nvidia-375"
+$ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:"/usr/lib/nvidia-396"
 
 # 安裝cudnn的三個套件(須自行下載)
-sudo dpkg -i libcudnn7_7.0.5.15-1+cuda9.0_amd64.deb
-sudo dpkg -i libcudnn7-dev_7.0.5.15-1+cuda9.0_amd64.deb
-sudo dpkg -i libcudnn7-doc_7.0.5.15-1+cuda9.0_amd64.deb
+$ sudo dpkg -i libcudnn7_7.0.5.15-1+cuda9.0_amd64.deb
+$ sudo dpkg -i libcudnn7-dev_7.0.5.15-1+cuda9.0_amd64.deb
+$ sudo dpkg -i libcudnn7-doc_7.0.5.15-1+cuda9.0_amd64.deb
 
 # 安裝nccl套件(需自行下載)
-sudo dpkg -i nccl-repo-ubuntu1604-2.2.12-ga-cuda9.0_1-1_amd64.deb
-sudo apt install libnccl2 libnccl-dev
+$ sudo dpkg -i nccl-repo-ubuntu1604-2.2.12-ga-cuda9.0_1-1_amd64.deb
+$ sudo apt install libnccl2 libnccl-dev
 
 # 安裝NVIDIA CUDA Profile Tools介面
-sudo apt-get install libcupti-dev
+$ sudo apt-get install libcupti-dev
 ```
 ## 2. 安裝TENSORFLOW(如不需要tensorflow則跳過此步驟)
 ```bash
-sudo apt-get install cuda-command-line-tools
-export LD_LIBRARY_PATH=${LD_LIBRARY_PATH:+${LD_LIBRARY_PATH}:}/usr/local/cuda/extras/CUPTI/lib64
+$ sudo apt-get install cuda-command-line-tools
+$ export LD_LIBRARY_PATH=${LD_LIBRARY_PATH:+${LD_LIBRARY_PATH}:}/usr/local/cuda/extras/CUPTI/lib64
 
 # 安裝Python2.7版本的tensorlfow(gpu)
-wget https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.5.0-cp27-none-linux_x86_64.whl 
-pip2 install tensorflow_gpu-1.5.0-cp27-none-linux_x86_64.whl —user
+$ wget https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.5.0-cp27-none-linux_x86_64.whl 
+$ pip2 install tensorflow_gpu-1.5.0-cp27-none-linux_x86_64.whl —user
 # 若上述指令失敗，可嘗試以下指令
 # pip2 install tensorflow-gpu==1.5 --upgrade --ignore-installed —user
 
 # 安裝Python3.7版本的tensorlfow(gpu)
 
-wget https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.9.0-cp35-cp35m-linux_x86_64.whl
-pip3 install tensorflow_gpu-1.9.0-cp35-cp35m-linux_x86_64.whl —user
+$ wget https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.9.0-cp35-cp35m-linux_x86_64.whl
+$ pip3 install tensorflow_gpu-1.9.0-cp35-cp35m-linux_x86_64.whl —user
 # 若上述指令失敗，可嘗試以下指令
 # pip3 install tensorflow-gpu==1.5 --ignore-installed —user
 ```
@@ -68,44 +68,44 @@ pip3 install tensorflow_gpu-1.9.0-cp35-cp35m-linux_x86_64.whl —user
 * **eigen3套件來源(ref: https://download.csdn.net/download/luojie140/10385556)**
 ```bash
 # 更新eigen版本
-unzip eigen3.zip
+$ unzip eigen3.zip
 
 # 如果已存在eigen3套件，則移除
-sudo rm -rf /usr/include/eigen3/
+$ sudo rm -rf /usr/include/eigen3/
 # [Example] sudo mv ./eigen3 /usr/include/
-sudo mv [新eigen3目錄位置] /usr/include/
+$ sudo mv [新eigen3目錄位置] /usr/include/
 
 # 補安裝future套件
-pip install future
-pip3 install future
+$ pip2 install future
+$ pip3 install future
 
 # 將caffe2位置export進PYTHONPATH變數
 # [Example]
 # export PYTHONPATH=$PYTHONPATH:/home/r06725053/pytorch/build
-export PYTHONPATH=$PYTHONPATH:[pytorch套件位置]
+$ export PYTHONPATH=$PYTHONPATH:[pytorch套件位置]
 
 # 如果沒有找到hypothesis套件
-pip install hypothesis
+$ pip2 install hypothesis
 ```
 
 ## 4. 安裝COCO API套件
 ```bash
 # [Example]
 # export COCOAPI=/home/r06725053/cocoapi
-export COCOAPI=[cocoapi套件位置]
-git clone https://github.com/cocodataset/cocoapi.git $COCOAPI
-cd $COCOAPI/PythonAPI
-make install
+$ export COCOAPI=[cocoapi套件位置]
+$ git clone https://github.com/cocodataset/cocoapi.git $COCOAPI
+$ cd $COCOAPI/PythonAPI
+$ make install
 ```
 
 ## 5. 安裝DETECTRON套件
 ```bash
 # [Example]
 # DETECTRON=/home/r06725053/detectron
-DETECTRON=[detectron套件位置]
-git clone https://github.com/facebookresearch/detectron $DETECTRON
-cd $DETECTRON
-python setup.py develop --user
+$ DETECTRON=[detectron套件位置]
+$ git clone https://github.com/facebookresearch/detectron $DETECTRON
+$ cd $DETECTRON
+$ python setup.py develop --user
 ```
 
 # 三、修改detectron源代碼
