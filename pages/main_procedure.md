@@ -66,7 +66,7 @@ with open('_stats.pkl', 'rb') as f:
 ```
 
 # 三、其他
-## 將視頻轉為圖像
+## + 將視頻轉為圖像
 > [Exmaple] - video2img.py  
 > 
 > 輸入**本目錄下的video.mp4檔**，輸出圖像位置為**本地目錄**  
@@ -93,7 +93,7 @@ while success:
 
 ```
 
-## 將圖像轉為視頻
+## + 將圖像轉為視頻
 > [Exmaple] - img2video.py  
 > 
 > 輸入**本目錄**下的所有的**png檔**，輸出視頻位置為**本地目錄的video.mp4**  
@@ -156,7 +156,7 @@ cv2.destroyAllWindows()
 print("The output video is {}".format(output))
 ```
 
-## 廣播視頻(視頻 -> rtsp串流)
+## + 廣播視頻(視頻 -> rtsp串流)
 ```bash
 $ git clone https://github.com/revmischa/rtsp-server.git
 $ cd rtsp-server
