@@ -137,6 +137,7 @@ for i in sorted_inds:
 @@ -387,6 +391,6 @@ 修改輸出圖像名稱
 @@ def vis_one_image(line, color=colors[len(kp_lines) + 1], linewidth=1.0, alpha=0.7)
 ...
++   # [Example] 001.png -> processed.png
 -   output_name = os.path.basename(im_name) + '.' + ext
 +   output_name = 'processed_' + os.path.basename(im_name)
 ```
@@ -158,6 +159,11 @@ for i in sorted_inds:
      im_list = [args.im_or_folder]
 
 +    im_list = list(im_list)
++    ```
++    根據圖像名稱由小至大排序
++    [Example]
++    [1.png, 0.png, 2.png] -> [0.png, 1.png, 2.png]
++    ```
 +    im_list = sorted(im_list, key=lambda nm: re.search(r'(\d+)',nm).group(0))
 +
 +    count_stat = []
@@ -168,10 +174,12 @@ for i in sorted_inds:
          )
          logger.info('Processing {} -> {}'.format(im_name, out_name))
          im = cv2.imread(im_name)
+
++        # 將圖像以較短邊為基準等比例縮為600px 
 +        scale_ratio = 600.0 / min(im.shape[:2])
 +        h, w = int(im.shape[0] * scale_ratio), int(im.shape[1] * scale_ratio)
 +        resized_im = cv2.resize(im, (w, h))
-+
+
          timers = defaultdict(Timer)
          t = time.time()
          with c2_utils.NamedCudaScope(0):
@@ -179,6 +187,8 @@ for i in sorted_inds:
 -                model, im, None, timers=timers
 +                model, resized_im, None, timers=timers
              )
++            # 過濾掉在person類別(cls_boxes[1])所有信心指數低於0.7的預測物體
++            # 並將其數量加總，存入count_stat
 +            over_threshold = [c for c in cls_boxes[1] if c[4] > 0.7]
 +            count_stat.append(len(over_threshold))
          logger.info('Inference time: {:.3f}s'.format(time.time() - t))

@@ -114,7 +114,7 @@ $ ln -s [coco格式的標記檔位置] $DETECTRON/detectron/datasets/data/coco/a
 + # 每次取圖片的數量
 + IMS_PER_BATCH: 1
 ```
-[4. 修改detectron訓練數據文件 - detectron/detectron/datasets/dataset_catalog.py]
+4. 修改detectron訓練數據文件 - detectron/detectron/datasets/dataset_catalog.py
 ```diff
 @@ 40, 0 @@
 + # 數據集的目錄位置
