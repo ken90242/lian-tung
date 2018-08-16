@@ -120,7 +120,7 @@ def vis_one_image(
 -        ext='pdf', out_when_no_box=False):
 +        ext='png', out_when_no_box=False):
 
-@@ -288,12 +288,17 @@僅標註行人類別
+@@ -288,12 +288,17 @@ 僅標註行人類別
 @@ def vis_one_image(line, color=colors[len(kp_lines) + 1], linewidth=1.0, alpha=0.7)
 
 mask_color_id = 0
