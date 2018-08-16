@@ -163,9 +163,9 @@ for i in sorted_inds:
 
 +    im_list = list(im_list)
 +    ```
-+    根據圖像名稱由小至大排序
-+    [Example]
-+    [1.png, 0.png, 2.png] -> [0.png, 1.png, 2.png]
++      根據圖像名稱由小至大排序
++      [Example]
++        [1.png, 0.png, 2.png] -> [0.png, 1.png, 2.png]
 +    ```
 +    im_list = sorted(im_list, key=lambda nm: re.search(r'(\d+)',nm).group(0))
 +
