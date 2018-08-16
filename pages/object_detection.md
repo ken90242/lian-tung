@@ -13,7 +13,7 @@
 > libcudnn7-dev.deb: https://pan.baidu.com/s/1hick70me6ZngyiuLbeKmsw  
 > libcudnn7-doc.deb: https://pan.baidu.com/s/1AixJucHHqloGWfxaVVgtNg  
 > cuda-repo-9-0.deb: https://pan.baidu.com/s/12aPiHUfj_K6xJbIXkx9PCA  
-> eigen3.zip: https://pan.baidu.com/s/1HSFXgJFaj4wCby8oong8yw  
+> eigen3.zip: https://pan.baidu.com/s/1HSFXgJFaj4wCby8oong8yw / https://download.csdn.net/download/luojie140/10385556    
 
 ## 1. 安裝CUDA, CUDNN..等GPU運算套件
 ```bash
@@ -65,7 +65,7 @@ $ pip3 install tensorflow_gpu-1.9.0-cp35-cp35m-linux_x86_64.whl —user
 > [重要!]CAFFE2環境似乎不支援virtualenv，需特別注意
 
 * **請先按[caffe2官方文件](https://caffe2.ai/docs/getting-started.html?platform=ubuntu&configuration=compile)安裝**  
-* **eigen3套件來源(ref: https://download.csdn.net/download/luojie140/10385556)**
+
 ```bash
 # 更新eigen版本
 $ unzip eigen3.zip
