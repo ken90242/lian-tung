@@ -4,8 +4,8 @@
 
 # 二、流程說明
 ## 1. 擷取視頻串流成圖像
-> Input: rtsp位址  
-> Output: 圖像(001.png, 002.png, ...)
+> [IN]  rtsp位址  
+> [OUT] 圖像(001.png, 002.png, ...)
 
 **串流位址：(點此查閱[表格](../assets/rtsp_address.xlsx)(ChinaUnicom-wai的wifi密碼))**
 
@@ -18,8 +18,8 @@ $ avconv -rtsp_transport tcp -i [rtsp地址] -r [每秒幾禎] -f image2 %04d.pn
 
 ## 2. 行人偵測模型，偵測人數
 * **務必先完成detectron環境安裝及相關源代碼改動**(見[detectron安裝文件](object_detection.md))
-> Input: (圖像 or 放置圖像的目錄) + 模型權重檔 + 設定檔  
-> Output: 標記圖像(於輸出目錄下) + pickle檔案(紀錄人數信息)
+> [IN]  (圖像 or 放置圖像的目錄) + 模型權重檔 + 設定檔  
+> [OUT] 標記圖像(於輸出目錄下) + pickle檔案(紀錄人數信息)
 
 ```python
 # (先進入detectron目錄)
@@ -41,8 +41,8 @@ python2 tools/infer_simple.py \
 ```
 
 ## 3. 平滑化數據
-> Input: pickle檔案(紀錄人數信息)  
-> Output: 圖像
+> [IN]  pickle檔案(紀錄人數信息)  
+> [OUT] 圖像
 
 ```python
 import pickle as pkl
