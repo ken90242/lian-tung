@@ -165,5 +165,5 @@ $ cd
 # ffmpeg -re -i ./test_live_stream.mp4 -f rtsp -muxdelay 0.1 -strict -2 rtsp://112.112.112.112:5545/abc
 $ ffmpeg -re -i [視頻位置] -f rtsp -muxdelay 0.1 -strict -2 [服務器地址及端口]
 
-# 觀看串流直接在網址列輸入rtsp://112.112.112.112/abc(須先安裝VLC播放套件)
+# 觀看串流直接在網址列輸入rtsp://112.112.112.112/abc(建議安裝VLC套件來播放)
 ```
