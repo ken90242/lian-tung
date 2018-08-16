@@ -28,7 +28,7 @@
 #### 2. 使用行人偵測模型(detectron)偵測圖像中的人數，(未來配合人臉識別與行人再識別算法，精確計算行人數量)
 <img src="assets/procedure_2.png" alt="流程示意圖1" height="200px"/>
 
-#### 3. 平滑化數據(因模型存在失誤率)
+#### 3. 平滑化數據(因模型存在失誤率)(x軸為frame數量，y軸為人數)
 <img src="assets/procedure_3.png" alt="流程示意圖1" height="200px"/>
 
 ## 項目進展
