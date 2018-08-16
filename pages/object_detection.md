@@ -13,7 +13,7 @@
 > libcudnn7-dev.deb: https://pan.baidu.com/s/1hick70me6ZngyiuLbeKmsw  
 > libcudnn7-doc.deb: https://pan.baidu.com/s/1AixJucHHqloGWfxaVVgtNg  
 > cuda-repo-9-0.deb: https://pan.baidu.com/s/12aPiHUfj_K6xJbIXkx9PCA  
-> eigen3.zip(1): https://pan.baidu.com/s/1HSFXgJFaj4wCby8oong8yw
+> eigen3.zip(1): https://pan.baidu.com/s/1HSFXgJFaj4wCby8oong8yw  
 > eigen3.zip(2): https://download.csdn.net/download/luojie140/10385556  
 
 ## 1. 安裝CUDA, CUDNN..等GPU運算套件
