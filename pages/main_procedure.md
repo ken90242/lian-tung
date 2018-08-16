@@ -126,11 +126,10 @@ images = []
 for f in os.listdir(dir_path):
     if f.endswith(ext): images.append(f)
 
-```
-  根據圖像名稱由小至大排序
-  [Example]
-    [1.png, 0.png, 2.png] -> [0.png, 1.png, 2.png]
-```
+#  根據圖像名稱由小至大排序
+#  [Example]
+#    [1.png, 0.png, 2.png] -> [0.png, 1.png, 2.png]
+
 images=sorted(images, key=lambda x: int(re.sub("\D", "", x)))
 
 # Determine the width and height from the first image
