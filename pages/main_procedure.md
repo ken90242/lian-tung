@@ -82,7 +82,7 @@ count = 0
 success = True
 
 while success:
-  # sys.argv[2]為使用者輸入的輸出位置
+  # sys.argv[2]為使用者輸入的輸出圖像位置
   path = os.path.join(sys.argv[2], str(count) + ".png")
   # save frame as PNG file
   cv2.imwrite(path, image)
