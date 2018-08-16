@@ -65,17 +65,24 @@ with open('_stats.pkl', 'rb') as f:
 
 # 三、其他
 ## 將視頻轉為圖像
+> [Exmaple] video2img.py
+> 輸入本目錄下的video.mp4檔，輸出圖像位置為本地目錄
+
+`$ python video2img.py ./video.mp4 ./`
+
 ```python
 import cv2
 import sys
 import os
 
+# sys.argv[1]為使用者輸入的視頻位置
 vidcap = cv2.VideoCapture(sys.argv[1])
 success, image = vidcap.read()
 count = 0
 success = True
 
 while success:
+  # sys.argv[2]為使用者輸入的輸出位置
   path = os.path.join(sys.argv[2], str(count) + ".png")
   # save frame as PNG file
   cv2.imwrite(path, image)
