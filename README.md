@@ -50,11 +50,11 @@
 [8] Mask RCNN, 2017: (https://arxiv.org/abs/1703.06870)  
 [9] [Instance Segmentation with Mask R-CNN and TensorFlow](https://engineering.matterport.com/splash-of-color-instance-segmentation-with-mask-r-cnn-and-tensorflow-7c761e238b46)  
 
-#### 平滑化數據
+#### # 平滑化數據
 > 由於模型並非完美，人肉眼看似差不多的圖像，模型很有可能第一張判斷有3個人，第二張則有4個人
 > 為了降低此種"抖動"對結果產生的負面影響，我們採用[moving average](https://blog.csdn.net/u014365862/article/details/54380313)方式來處理
 
-#### 模型再訓練(適應營業廳場景)
+#### # 模型再訓練(適應營業廳場景)
 > 由于Facebook預先訓練好的模型對於人口密集的圖像仍不夠完善
 > 我們計畫之後透過標記好的營業廳圖像來支持模型再訓練
 > 模型再訓練主要的困難點如下：
