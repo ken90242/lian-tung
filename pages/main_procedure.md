@@ -91,6 +91,10 @@ while success:
 ```
 
 ## 將圖像轉為視頻
+> [Exmaple] img2video.py  
+> 輸入本目錄下的所有的png檔，輸出視頻位置為本地目錄的video.mp4  
+> `$ python img2video.py -i ./ -o video.mp4 -ext png`  
+
 ```python
 import cv2
 import argparse
@@ -100,19 +104,31 @@ from tqdm import tqdm
 
 # Construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
-ap.add_argument("-ext", "--extension", required=False, default='png', help="extension name. default is 'png'.")
-ap.add_argument("-o", "--output", required=False, default='output.mp4', help="output video file")
+# 圖像來源目錄(預設為/tmp/detectron-visualizations)
+ap.add_argument("-i", "--input", required=False, default='/tmp/detectron-visualizations', help="Input images directory")
 args = vars(ap.parse_args())
 
+# 圖像輸出位置及名稱(預設為output.mp4)
+ap.add_argument("-o", "--output", required=False, default='output.mp4', help="output video file")
+
+# 圖像輸入副檔名(預設為.png)
+ap.add_argument("-ext", "--extension", required=False, default='png', help="extension name. default is 'png'.")
+
 # Arguments
-dir_path = '/tmp/detectron-visualizations' # 更改圖像來源處
+dir_path = args['input']
 ext = args['extension']
 output = args['output']
 
+# 僅接受目錄下的使用者輸入的副檔名(預設: xxx.png)
 images = []
 for f in os.listdir(dir_path):
     if f.endswith(ext): images.append(f)
 
+```
+  根據圖像名稱由小至大排序
+  [Example]
+    [1.png, 0.png, 2.png] -> [0.png, 1.png, 2.png]
+```
 images=sorted(images, key=lambda x: int(re.sub("\D", "", x)))
 
 # Determine the width and height from the first image
@@ -122,6 +138,7 @@ height, width, channels = frame.shape
 
 # Define the codec and create VideoWriter object
 fourcc = cv2.VideoWriter_fourcc(*'mp4v') # Be sure to use lower case
+# 可根據需求改動，20.0為輸出的fps(frame per second)
 out = cv2.VideoWriter(output, fourcc, 20.0, (width, height))
 
 for image in tqdm(images):
