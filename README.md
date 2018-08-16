@@ -40,10 +40,10 @@
 [3] Fast RCNN, 2015: (https://arxiv.org/abs/1504.08083)  
 [4] Faster RCNN, 2015: (https://arxiv.org/abs/1406.4729)  
 [5] YOLO, 2015: (https://arxiv.org/abs/1506.02640)  
-[6] Mask RCNN, 2017: (https://arxiv.org/abs/1703.06870)  
-[7] [Instance Segmentation with Mask R-CNN and TensorFlow](https://engineering.matterport.com/splash-of-color-instance-segmentation-with-mask-r-cnn-and-tensorflow-7c761e238b46)  
-[8] Feature Pyramid, 2016: (https://arxiv.org/abs/1612.03144)  
-[9] [Understanding Feature Pyramid Networks for object detection (FPN)](https://medium.com/@jonathan_hui/understanding-feature-pyramid-networks-for-object-detection-fpn-45b227b9106c)
+[6] Feature Pyramid, 2016: (https://arxiv.org/abs/1612.03144)  
+[7] [Understanding Feature Pyramid Networks for object detection (FPN)](https://medium.com/@jonathan_hui/understanding-feature-pyramid-networks-for-object-detection-fpn-45b227b9106c)  
+[8] Mask RCNN, 2017: (https://arxiv.org/abs/1703.06870)  
+[9] [Instance Segmentation with Mask R-CNN and TensorFlow](https://engineering.matterport.com/splash-of-color-instance-segmentation-with-mask-r-cnn-and-tensorflow-7c761e238b46)  
 
 * **模型再訓練(適應營業廳場景)**
 > 由于Facebook預先訓練好的模型對於人口密集的圖像仍不夠完善
