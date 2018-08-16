@@ -10,8 +10,8 @@
 |聯通服務器系統版本落後，不支援GPU資源|我們使用學校GPU服務器自行開發|購買消費級GPU計算機|
 |聯通服務器有連線限制，開通port需上繳大量文件|我們使用學校服務器自行實驗|自行添購服務器(或雲服務器)|
 |外網限制連線，許多資源無法獲取|我們自行購買付費VPN獲取資源|自行購買VPN|
-|無可用標記數據訓練|直接使用已訓練好的模型|計畫未來自行標註數據 - 須為[**coco**格式](https://blog.csdn.net/yeyang911/article/details/78675942)|
-|無可用標記數據測試|肉眼感性評估|計畫未來自行標註數據 - 須為[**coco**格式](https://blog.csdn.net/yeyang911/article/details/78675942)，並採用[**mAP, mean Average Precision**](https://medium.com/@jonathan_hui/map-mean-average-precision-for-object-detection-45c121a31173)標準評估效果|
+|無可用標記數據訓練|直接使用已訓練好的模型|計畫未來[自行標註數據](#模型再訓練適應營業廳場景) - 須為[**coco**格式](https://blog.csdn.net/yeyang911/article/details/78675942)|
+|無可用標記數據測試|肉眼感性評估|計畫未來[自行標註數據](模型再訓練適應營業廳場景) - 須為[**coco**格式](https://blog.csdn.net/yeyang911/article/details/78675942)，並採用[**mAP, mean Average Precision**](https://medium.com/@jonathan_hui/map-mean-average-precision-for-object-detection-45c121a31173)標準評估效果|
 
 
 ## 項目前情提要與說明
@@ -50,11 +50,11 @@
 [8] Mask RCNN, 2017: (https://arxiv.org/abs/1703.06870)  
 [9] [Instance Segmentation with Mask R-CNN and TensorFlow](https://engineering.matterport.com/splash-of-color-instance-segmentation-with-mask-r-cnn-and-tensorflow-7c761e238b46)  
 
-##### **平滑化數據**
+#### 平滑化數據
 > 由於模型並非完美，人肉眼看似差不多的圖像，模型很有可能第一張判斷有3個人，第二張則有4個人
 > 為了降低此種"抖動"對結果產生的負面影響，我們採用[moving average](https://blog.csdn.net/u014365862/article/details/54380313)方式來處理
 
-##### **模型再訓練(適應營業廳場景)**
+#### 模型再訓練(適應營業廳場景)
 > 由于Facebook預先訓練好的模型對於人口密集的圖像仍不夠完善
 > 我們計畫之後透過標記好的營業廳圖像來支持模型再訓練
 > 模型再訓練主要的困難點如下：
