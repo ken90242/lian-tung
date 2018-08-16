@@ -11,7 +11,7 @@
 |聯通服務器有連線限制，開通port需上繳大量文件|我們使用學校服務器自行實驗|自行添購服務器(或雲服務器)|
 |外網限制連線，許多資源無法獲取|我們自行購買付費VPN獲取資源|自行購買VPN|
 |無可用標記數據訓練|直接使用已訓練好的模型|計畫未來自行標註數據 - 須為[**coco**格式](https://blog.csdn.net/yeyang911/article/details/78675942)|
-|無可用標記數據測試|肉眼感性評估|計畫未來自行標註數據，並採用[**mAP, mean Average Precision**](https://medium.com/@jonathan_hui/map-mean-average-precision-for-object-detection-45c121a31173)標準評估效果|
+|無可用標記數據測試|肉眼感性評估|計畫未來自行標註數據 - 須為[**coco**格式](https://blog.csdn.net/yeyang911/article/details/78675942)，並採用[**mAP, mean Average Precision**](https://medium.com/@jonathan_hui/map-mean-average-precision-for-object-detection-45c121a31173)標準評估效果|
 
 
 ## 項目前情提要與說明
