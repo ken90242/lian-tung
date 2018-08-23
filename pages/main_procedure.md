@@ -70,6 +70,7 @@ with open('_stats.pkl', 'rb') as f:
 > [Exmaple] - video2img.py  
 > 
 > 輸入**本目錄下的video.mp4檔**，輸出圖像位置為**本地目錄**  
+> `$ python video2img.py [視頻檔位置] [圖像輸出位置]`  
 > `$ python video2img.py ./video.mp4 ./`  
 
 ```python
@@ -84,12 +85,12 @@ count = 0
 success = True
 
 while success:
-  # sys.argv[2]為使用者輸入的輸出圖像位置
-  path = os.path.join(sys.argv[2], str(count) + ".png")
-  # save frame as PNG file
-  cv2.imwrite(path, image)
-  success, image = vidcap.read()
-  count += 1
+    # sys.argv[2]為使用者輸入的輸出圖像位置
+    path = os.path.join(sys.argv[2], str(count) + ".png")
+    # save frame as PNG file
+    cv2.imwrite(path, image)
+    success, image = vidcap.read()
+    count += 1
 
 ```
 
@@ -97,6 +98,7 @@ while success:
 > [Exmaple] - img2video.py  
 > 
 > 輸入**本目錄**下的所有的**png檔**，輸出視頻位置為**本地目錄的video.mp4**  
+> `$ python img2video.py -i [輸入圖像位置] -o [輸出視頻位置] -ext [輸入圖像檔案格式]`  
 > `$ python img2video.py -i ./ -o video.mp4 -ext png`  
 
 ```python
